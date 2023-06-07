@@ -22,7 +22,6 @@ namespace Exo.WebApi.Controllers
             return Ok(_projetoRepository.Listar());
         }
 
-        // Código novo que completa o CRUD.
         [HttpPost]
         public IActionResult Cadastrar(Projeto projeto)
         {
@@ -61,7 +60,5 @@ namespace Exo.WebApi.Controllers
                 return BadRequest();
             }
         }
-
-
     }
 }
